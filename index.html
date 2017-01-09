@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Claim Search</title>
+  <link rel="stylesheet" href="css/barcodes.css">
+  <link rel="stylesheet" href="css/tabs.css">
+</head>
+<body>
+  <div id="barcodes">
+    <form method="post" action="index.asp" id="form">
+      <div class="group">
+      <ul id="navlist">
+        <li>
+          <label for="lname">Name</label><br>
+          <input name="lname" type="text" id="lname" placeholder="Last" pattern="^[A-Za-z.'-]+$" title="Last name only!">
+          <input name="fname" type="text" id="fname" placeholder="First" pattern="^[A-Za-z.'-]+$" title="First name only!">
+        </li>
+        <li>
+          <label for="ssn">SSN</label><br>
+          <input name="ssn" type="text" id="ssn" placeholder="SSN (no dashes)" pattern="^[0-9]{9}$" title="SSN without dashes!">
+        </li>
+        <li>
+          <label for="group">Claim &numero;</label><br>
+          <input name="group" type="text" id="group" placeholder="XXX" pattern="^[0-9]{1,3}$" title="1 to 3 digits">
+          <input name="year" type="text" id="year" placeholder="XXX" pattern="^[0-9]{1,3}$" title="1 to 3 digits">
+          <input name="case" type="text" id="case" placeholder="XXXXXXX" pattern="^[0-9]{1,7}$" title="1 to 7 digits">
+        </li>
+        <li>
+          <label for="eob">EOB &numero;</label><br>
+          <input name="eob" type="text" id="eob" placeholder="EOB" pattern="^[0-9]{1,3}$" title="7 digits">
+        </li>
+        <li>
+          <label for="dob">Date of Birth</label><br>
+          <input name="dob" type="date" id="dob" placeholder="YYYY-MM-DD" pattern="(19|20)\d\d-(0[1-9]|1[012])-(0[1-9]|[12][0-9]|3[01])" title="YYYY-MM-DD">
+        </li>
+        <li>
+          <label for="doi">Date of Accident</label><br>
+          <input name="doi" type="date" id="doi" placeholder="YYYY-MM-DD" pattern="(19|20)\d\d-(0[1-9]|1[012])-(0[1-9]|[12][0-9]|3[01])" title="YYYY-MM-DD">
+        </li>
+      </ul>
+      </div><!--  end group -->
+
+      <div class="center">
+        <button type="submit">search</button>
+        <h3 id="message"></h3>
+      </div>
+
+    </form>
+
+    <div id="tab-group" class="ready">
+      <h3 class="tab-header active" id="tab-header-1">NEW <span id="recent-tab" class="count"></span></h3>
+      <div class="tab-content active" id="tab-content-1"></div> 
+
+      <h3 class="tab-header" id="tab-header-2">OLD <span id="all-tab" class="count"></span></h3>
+      <div class="tab-content" id="tab-content-2"></div>
+
+      <h3 class="tab-header" id="tab-header-3">SIS <span id="sis-tab" class="count"></span></h3>
+      <div class="tab-content" id="tab-content-3"></div>
+    </div>    
+
+  </div> <!-- end barcodes div -->
+  <script src="src/barcodes.js"></script>
+</body>
+</html>

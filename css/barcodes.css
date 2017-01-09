@@ -1,0 +1,131 @@
+form {
+/*  font-size:0;*/
+}
+
+#barcodes button {
+  border: 0 none;
+  border-radius: 2px 2px 2px 2px;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: none;
+  transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.3s ease 0s;
+  /*unique styling*/
+  width: 150px; /*enough width for 3 82px input boxes side-by-side*/
+  height: 30px;
+  background: none repeat scroll 0 0 #E0645C;
+  color: #FFFFFF;
+  /*end unique styling*/
+}
+
+#barcodes button:hover {
+  background: none repeat scroll 0 0 #999999;
+  color: #FFFFFF;
+}
+
+#navlist li
+{
+/*  display: inline;*/
+  list-style-type: none;
+  float: left;
+  width: 16.5%;
+}
+
+label {
+  font-size: 14px;
+  font-weight: 900;
+/*  color: #FFFFFF;*/
+}
+
+input {
+  display: inline;
+  height: 25px;
+  background-color : #F1F1F1;
+  border: 0;
+  border-radius: 2px;
+}
+
+input:focus {
+  background-color : #FFFFFF;
+}
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px white inset;
+}
+
+input#lname, input#fname{
+/*  width: 60px;*/
+width: 46%;
+}
+
+input#ssn {
+/*  width: 100px;*/
+  width: 94%;
+}
+
+input#group, input#year {
+/*  width: 28px;*/
+  width: 18%;
+}
+
+input#case {
+/*  width: 60px;*/
+  width: 52%;
+}
+
+input#eob {
+/*  width: 100px;*/
+  width: 94%;
+}
+
+input#dob, input#doi {
+/*  width: 125px;*/
+  width: 94%;
+}
+
+#barcodes td {
+  font-size: 12px;
+}
+
+.group {
+  width: 100%;
+  padding-bottom:8px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+/*  background-color: rgb(55,66,74);*/
+/*  background-color: #8cd2f4;*/
+/*  background-color: #0046ad;*/
+/*  background-color: #005288;*/
+/*  background-color: #CCCCCC;*/
+}
+
+[class*='group']:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#tab-group {
+  float: left;
+  width: 100%;
+}
+
+table#recent td:nth-child(1), table#all td:nth-child(1) { text-align: center; white-space: nowrap;}
+table#recent td:nth-child(3), table#all td:nth-child(3)  { text-align: center; white-space: nowrap;}
+table#recent td:nth-child(4), table#all td:nth-child(4)  { text-align: center; }
+table#recent td:nth-child(6), table#all td:nth-child(6)  { text-align: center; }
+table#recent td:nth-child(7), table#all td:nth-child(7)  { text-align: center; white-space: nowrap;}
+table#recent td:nth-child(8), table#all td:nth-child(8)  { text-align: center; }
+table#recent td:nth-child(9), table#all td:nth-child(9)  { text-align: center; }
+table#recent td:nth-child(10), table#all td:nth-child(10) { text-align: center; white-space: nowrap;}
+table#recent td:nth-child(11), table#all td:nth-child(11) { text-align: center; }
+
+table#sis th:nth-child(1), table#sis td:nth-child(1) { text-align: center; }
+table#sis th:nth-child(2), table#sis td:nth-child(2) { text-align: center; }
+table#sis th:nth-child(4), table#sis td:nth-child(4) { text-align: center; }
+table#sis th:nth-child(7), table#sis td:nth-child(7) { text-align: center; }
+table#sis th:nth-child(8), table#sis td:nth-child(8) { text-align: center; }
